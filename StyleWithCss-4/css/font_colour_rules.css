@@ -1,0 +1,17 @@
+body, html {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 15px;
+    color: darkred;
+    font-family: fantasy;
+}
+
+li {
+    font-size: 0.5rem;
+}
+
+ol {
+    font-family: Courier;
+}
