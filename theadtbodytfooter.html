@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html>
+	<meta charset="utf-8">
+	
+	<head>
+		<title>THEAD, TBODY and TFOOTER</title>
+		<style>
+			/* border-width thin, medium, thick, in pixels */
+			/* border-style none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset  */
+			#table1, .tht1 {
+				border: 1px dotted black;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<table id="table1" border="1">
+			<caption>
+				<p>thead tag example</p>
+			</caption>
+			<thead style="color: white">
+				<tr>
+					<th class="tht1" scope="col">Name</th>
+					<th class="tht1" scope="col">Age</th>
+				</tr>
+			</thead>
+		</table>
+		
+		<table border="1">
+			<caption>
+				<p>tbody tag example</p>
+			</caption>
+			
+			<thead style="color: white">
+				<tr>
+					<th scope="col">Name</th>
+					<th scope="col">Age</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>Alexa</td>
+					<td>23</td>
+				</tr>
+				
+				<tr>
+					<td>James</td>
+					<td>35</td>
+				</tr>
+				
+				<tr>
+					<td>Trisha</td>
+					<td>23</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<table border="1">
+			<caption>
+				<p>tfoot tag example</p>
+			</caption>
+			
+			<thead style="color: white">
+				<tr>
+					<th scope="col">Name</th>
+					<th scope="col">Age</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>Alexa</td>
+					<td>23</td>
+				</tr>
+				
+				<tr>
+					<td>James</td>
+					<td>35</td>
+				</tr>
+				
+				<tr>
+					<td>Trisha</td>
+					<td>23</td>
+				</tr>
+			</tbody>
+			
+			<tfoot>
+				<tr>
+					<td>3 Unique Name</td>
+					<td>2 Unique Ages</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		<table border="1">
+			<caption>
+				<p>all together example</p>
+			</caption>
+			
+			<colgroup>
+				<col span="1" style="background-color: green">
+				<col span="1" style="background-color: orange"> 
+			</colgroup>
+			
+			<thead style="color: white">
+				<tr>
+					<th scope="col">Name</th>
+					<th scope="col">Age</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>Alexa</td>
+					<td>23</td>
+				</tr>
+				
+				<tr>
+					<td>James</td>
+					<td>35</td>
+				</tr>
+				
+				<tr>
+					<td>Trisha</td>
+					<td>23</td>
+				</tr>
+			</tbody>
+			
+			<tfoot style="font-style: italic">
+				<tr>
+					<td>3 Unique Name</td>
+					<td>2 Unique Ages</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
